@@ -6,10 +6,10 @@ package de.fluchtwege.equationparser
  * The infix tokens are then converted to postfix notation.
  * Finally the postfix tokens are evaluated
  */
-class EquationParser {
+class EquationSolver {
 
     fun parse(expression: String): Int {
-        val tokens = ExpressionParser(expression).parse()
+        val tokens = ExpressionParser(expression).tokenize()
         val postfixTokens = InfixToPostfixConverter(tokens).convert()
         return PostfixEvaluator(postfixTokens).evaluate()
     }

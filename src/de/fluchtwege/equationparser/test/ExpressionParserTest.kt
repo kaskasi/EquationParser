@@ -13,7 +13,7 @@ class ExpressionParserTest {
     fun testParseExpression() {
         val input = "2 + 3 / 6"
         val parser = ExpressionParser(input)
-        val actual = parser.parse()
+        val actual = parser.tokenize()
 
         assertEquals(5, actual.size)
         assertEquals(2.0, (actual[0] as Token.Operand).value)

@@ -16,7 +16,7 @@ const val CLOSE_PARENTHESIS = ")"
  */
 internal class ExpressionParser(private val expression: String) {
 
-    fun parse() : List<Token> {
+    fun tokenize() : List<Token> {
         val convertedExpression = SqrtToInfixConverter().convert(expression)
         val splitExpression = convertedExpression.split(" ")
         return splitExpression.map { getToken(it) }
