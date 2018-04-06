@@ -2,7 +2,6 @@ package de.fluchtwege.equationsolver
 
 internal sealed class OperatorType(open val precedence: Int) {
 
-
     class Addition(override val precedence: Int = 0) : OperatorType(precedence) {
         override fun evaluate(lhs: Token.Operand, rhs: Token.Operand) = lhs.value + rhs.value
     }

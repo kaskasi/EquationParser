@@ -7,10 +7,9 @@ import java.util.*
  * consisting of operators and operands in postfix notation
  * to an integer value
  */
-internal class PostfixEvaluator(private val tokens: List<Token>) {
+internal class PostfixTokenEvaluator(private val tokens: List<Token>) {
 
-
-    val evaluationStack = Stack<Token.Operand>()
+    private val evaluationStack = Stack<Token.Operand>()
 
     fun evaluate(): Int {
         tokens.forEach {

@@ -1,12 +1,12 @@
 package de.fluchtwege.equationsolver.test
 
 import de.fluchtwege.equationsolver.OperatorType
-import de.fluchtwege.equationsolver.PostfixEvaluator
+import de.fluchtwege.equationsolver.PostfixTokenEvaluator
 import de.fluchtwege.equationsolver.Token
 import org.junit.Test
 import kotlin.test.assertEquals
 
-class PostfixEvaluatorTest {
+class PostfixTokenEvaluatorTest {
 
     @Test
     fun testEvaluate_precedence() {
@@ -18,7 +18,7 @@ class PostfixEvaluatorTest {
                 Token.Operator(OperatorType.Addition()),
                 Token.Operand(4.0),
                 Token.Operator(OperatorType.Subtraction()))
-        val evaluted = PostfixEvaluator(postfixTokens).evaluate()
+        val evaluted = PostfixTokenEvaluator(postfixTokens).evaluate()
         assertEquals(3, evaluted)
     }
 
@@ -30,7 +30,7 @@ class PostfixEvaluatorTest {
                 Token.Operator(OperatorType.Multiplication()),
                 Token.Operand(2.0),
                 Token.Operator(OperatorType.Addition()))
-        val evaluted = PostfixEvaluator(postfixTokens).evaluate()
+        val evaluted = PostfixTokenEvaluator(postfixTokens).evaluate()
         assertEquals(22, evaluted)
     }
 
@@ -44,7 +44,7 @@ class PostfixEvaluatorTest {
                 Token.Operator(OperatorType.Subtraction()),
                 Token.Operator(OperatorType.Division()),
                 Token.Operator(OperatorType.Addition()))
-        val evaluated = PostfixEvaluator(postfixTokens).evaluate()
+        val evaluated = PostfixTokenEvaluator(postfixTokens).evaluate()
         assertEquals(7, evaluated)
     }
 
@@ -58,7 +58,7 @@ class PostfixEvaluatorTest {
                 Token.Operator(OperatorType.Division()),
                 Token.Operator(OperatorType.Power()),
                 Token.Operator(OperatorType.Multiplication()))
-        val evaluated = PostfixEvaluator(postfixTokens).evaluate()
+        val evaluated = PostfixTokenEvaluator(postfixTokens).evaluate()
         assertEquals(4, evaluated)
     }
 }

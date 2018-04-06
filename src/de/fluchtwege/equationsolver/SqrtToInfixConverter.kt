@@ -12,7 +12,7 @@ internal class SqrtToInfixConverter {
     private val SQRT = "sqrt"
     private val INFIX_SQRT = "^ (1 / 2)"
 
-    public fun convert(expression: String): String {
+    fun convert(expression: String): String {
         var convertedExpression = expression
         var expressionStartIndex = convertedExpression.indexOf(SQRT)
         while (expressionStartIndex > -1) {
@@ -24,8 +24,8 @@ internal class SqrtToInfixConverter {
 
     private fun addSpacesToParenthesis(expression: String): String {
         return expression
-                .replace(OPEN_PARENTHESIS, "${OPEN_PARENTHESIS} ")
-                .replace(CLOSE_PARENTHESIS, " ${CLOSE_PARENTHESIS}")
+                .replace(OPEN_PARENTHESIS, "$OPEN_PARENTHESIS ")
+                .replace(CLOSE_PARENTHESIS, " $CLOSE_PARENTHESIS")
     }
 
     private fun replaceSqrtWithInfix(expressionStartIndex: Int, expression: String): String {
@@ -36,20 +36,20 @@ internal class SqrtToInfixConverter {
         return expression.replace(originalExpression, replacementPattern)
     }
 
-    private fun findEndOfSqrtExpression(index: Int, expression: String): Int {
-        var counter = index
+    private fun findEndOfSqrtExpression(expressionStartIndex: Int, expression: String): Int {
+        var currentIndex = expressionStartIndex
         val parenthesisStack = Stack<Char>()
-        counter += SQRT.length
-        parenthesisStack.push(expression[counter])
+        currentIndex += SQRT.length
+        parenthesisStack.push(expression[currentIndex])
         while (parenthesisStack.isNotEmpty()) {
-            counter++
-            val currentChar = expression[counter]
+            currentIndex++
+            val currentChar = expression[currentIndex]
             if (currentChar == '(') {
                 parenthesisStack.push(currentChar)
             } else if (currentChar == ')') {
                 parenthesisStack.pop()
             }
         }
-        return counter
+        return currentIndex
     }
 }

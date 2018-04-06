@@ -11,6 +11,6 @@ class EquationSolver {
     fun parse(expression: String): Int {
         val tokens = ExpressionTokenizer(expression).tokenize()
         val postfixTokens = InfixToPostfixConverter(tokens).convert()
-        return PostfixEvaluator(postfixTokens).evaluate()
+        return PostfixTokenEvaluator(postfixTokens).evaluate()
     }
 }
