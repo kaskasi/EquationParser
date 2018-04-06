@@ -9,7 +9,7 @@ package de.fluchtwege.equationsolver
 class EquationSolver {
 
     fun parse(expression: String): Int {
-        val tokens = ExpressionParser(expression).tokenize()
+        val tokens = ExpressionTokenizer(expression).tokenize()
         val postfixTokens = InfixToPostfixConverter(tokens).convert()
         return PostfixEvaluator(postfixTokens).evaluate()
     }

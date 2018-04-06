@@ -215,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.de.fluchtwege.equationsolver.test in InfixExpressionParser">
+  <component name="RunManager" selected="JUnit.de.fluchtwege.equationsolver.test in EquationSolver">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -327,7 +327,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="de.fluchtwege.equationsolver.test in InfixExpressionParser" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <configuration name="de.fluchtwege.equationsolver.test in EquationSolver" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="EquationSolver" />
       <extension name="coverage">
         <pattern>
@@ -396,7 +396,7 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.de.fluchtwege.equationsolver.test in InfixExpressionParser" />
+      <item itemvalue="JUnit.de.fluchtwege.equationsolver.test in EquationSolver" />
       <item itemvalue="JUnit.ExpressionParserTest.testParseExpression_" />
       <item itemvalue="JUnit.InfixToPostFixConverterTest" />
       <item itemvalue="JUnit.test in InfixExpressionParser" />

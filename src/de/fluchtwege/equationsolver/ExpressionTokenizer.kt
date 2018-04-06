@@ -14,7 +14,7 @@ const val CLOSE_PARENTHESIS = ")"
  *
  * requires: Operators and Values in expression are separated by spaces
  */
-internal class ExpressionParser(private val expression: String) {
+internal class ExpressionTokenizer(private val expression: String) {
 
     fun tokenize() : List<Token> {
         val convertedExpression = SqrtToInfixConverter().convert(expression)

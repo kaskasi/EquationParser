@@ -1,18 +1,18 @@
 package de.fluchtwege.equationsolver.test
 
 import org.junit.Test
-import de.fluchtwege.equationsolver.ExpressionParser
+import de.fluchtwege.equationsolver.ExpressionTokenizer
 import de.fluchtwege.equationsolver.OperatorType
 import de.fluchtwege.equationsolver.Token
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
-class ExpressionParserTest {
+class ExpressionTokenizerTest {
 
     @Test
     fun testParseExpression() {
         val input = "2 + 3 / 6"
-        val parser = ExpressionParser(input)
+        val parser = ExpressionTokenizer(input)
         val actual = parser.tokenize()
 
         assertEquals(5, actual.size)
