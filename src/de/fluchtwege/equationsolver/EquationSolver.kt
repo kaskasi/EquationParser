@@ -1,4 +1,4 @@
-package de.fluchtwege.equationparser
+package de.fluchtwege.equationsolver
 
 /**
  * This class calculates the value of mathematical expression.

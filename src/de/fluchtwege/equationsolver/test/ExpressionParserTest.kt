@@ -1,9 +1,9 @@
-package de.fluchtwege.equationparser.test
+package de.fluchtwege.equationsolver.test
 
 import org.junit.Test
-import de.fluchtwege.equationparser.ExpressionParser
-import de.fluchtwege.equationparser.OperatorType
-import de.fluchtwege.equationparser.Token
+import de.fluchtwege.equationsolver.ExpressionParser
+import de.fluchtwege.equationsolver.OperatorType
+import de.fluchtwege.equationsolver.Token
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 

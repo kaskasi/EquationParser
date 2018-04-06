@@ -1,4 +1,4 @@
-package de.fluchtwege.equationparser
+package de.fluchtwege.equationsolver
 
 internal sealed class Token {
     class Operator(val operatorType: OperatorType) : Token() {

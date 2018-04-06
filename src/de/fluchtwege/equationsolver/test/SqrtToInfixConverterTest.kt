@@ -1,7 +1,7 @@
-package de.fluchtwege.equationparser.test
+package de.fluchtwege.equationsolver.test
 
 import org.junit.Test
-import de.fluchtwege.equationparser.SqrtToInfixConverter
+import de.fluchtwege.equationsolver.SqrtToInfixConverter
 import kotlin.test.assertEquals
 
 class SqrtToInfixConverterTest {

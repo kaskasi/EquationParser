@@ -1,8 +1,8 @@
-package de.fluchtwege.equationparser.test
+package de.fluchtwege.equationsolver.test
 
-import de.fluchtwege.equationparser.InfixToPostfixConverter
-import de.fluchtwege.equationparser.OperatorType
-import de.fluchtwege.equationparser.Token
+import de.fluchtwege.equationsolver.InfixToPostfixConverter
+import de.fluchtwege.equationsolver.OperatorType
+import de.fluchtwege.equationsolver.Token
 import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue

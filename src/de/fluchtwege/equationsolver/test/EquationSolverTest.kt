@@ -1,7 +1,7 @@
-package de.fluchtwege.equationparser.test
+package de.fluchtwege.equationsolver.test
 
 import org.junit.Test
-import de.fluchtwege.equationparser.EquationSolver
+import de.fluchtwege.equationsolver.EquationSolver
 import kotlin.test.assertEquals
 
 class EquationSolverTest {

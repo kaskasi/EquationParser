@@ -1,4 +1,4 @@
-package de.fluchtwege.equationparser
+package de.fluchtwege.equationsolver
 
 /**
  * This class may be used to print a collection of tokens for debugging
