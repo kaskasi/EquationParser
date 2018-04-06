@@ -6,6 +6,6 @@ Usage:
 
 
 ```
-EquationParser().parse("1 + 2 * 3 - 4")
+EquationSolver().parse("1 + 2 * 3 - 4")
 
 ```
